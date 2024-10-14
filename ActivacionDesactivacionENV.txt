@@ -1,0 +1,8 @@
+
+**Activar el entorno desde la terminal:
+
+.\env\Scripts\activate
+
+**Activar el entorno desde la terminal:
+
+deactivate
