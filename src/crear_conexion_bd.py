@@ -11,11 +11,9 @@ Esta función es utilizada en el resto del código
 
 import pyodbc
 
-       
-def crear_conexion_bd(server='TSSIT01', database='reservahotel', usuario='Soporte', contrasena='Instituto_2023'):
+# Función para conectar a la base de datos
+def conectar_bd(server, database, usuario, contrasena):
     try:
-       
-        
         connection_string = (
             'DRIVER={ODBC Driver 17 for SQL Server};'
             f'SERVER={server};'
@@ -29,5 +27,4 @@ def crear_conexion_bd(server='TSSIT01', database='reservahotel', usuario='Soport
         return connection
     except pyodbc.Error as e:
         print(f"Error al conectar a la base de datos: {e}")
-        print(f"Detalles del error: {str(e)}")
         return None
