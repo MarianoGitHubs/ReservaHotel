@@ -321,7 +321,7 @@ def config_page():
     # Función para conectar
     def conectar():
         nonlocal connection
-        connection = crear_conexion_bd(
+        connection = conectar_bd(
             server_var.get(),
             database_var.get(),
             user_var.get(),
